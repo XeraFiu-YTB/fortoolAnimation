@@ -1,72 +1,44 @@
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
-.cardList {
+#cardList {
   height: 100px;
-  width: 302px;
+  width: 800px;
   position: relative;
-  margin: 10px;
-  border: 1px solid #33e;
+  border: 2px solid black;
   overflow: hidden;
   white-space: nowrap;
 }
 
 .card {
   display: inline-block;
+  background-color: red;
   text-align: center;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  width: 100px;
   height: 100px;
+}
+
+.card > img {
   width: 100px;
-  line-height: 100px;
-  background-color: #99e;
-  font-family: monospace;
-  font-size: 2em;
-  color: #444;
-  border-left: 1px solid #33e;
-  border-right: 1px solid #33e;
+  height: 100px;
 }
 
-.cardList::before,
-.cardList::after {
-  content: '';
-  display: block;
-  z-index: 100;
-  width: 0px;
-  height: 0px;
-  transform: translateX(-50%);
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
+.arrow-down {
+  margin-left: 380px;
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  
+  border-top: 20px solid #f00;
 }
-
-.cardList::before {
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  border-top: 12px solid #33e;
+#dialog-msg > img {
+  width: 150px;
+  height: 150px;
 }
-
-.cardList::after {
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  border-bottom: 12px solid #33e;
-}
-
-.common {
-  background-color: green;
-  width: 200px;
-}
-.rare {
-  background-color: lightblue;
-  width: 100px;
-}
-.mythical {
-  background-color: yellow;
-  width: 50px;
-}
-.legendary {
-  background-color: orange;
-  width: 10px;
+#dialog-msg {
+  text-align: center;
 }
