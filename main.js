@@ -31,7 +31,7 @@ function reset(){
 
 function openCase(){
   reset();
-  var rand = random(1000,20000);
+  var rand = 5250;
   var childNumber = Math.floor(rand/100)+4;
   var timings = ["easeInOutBack","easeOutExpo","easeInOutBounce","easeOutQuad","swing","easeOutElastic","easeInOutElastic"];
   var timing = timings[random(0,timings.length)];
