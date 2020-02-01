@@ -83,7 +83,10 @@ function openCase(){
       buttons: {
         "Retirer l'objet":function(){
           $(this).dialog("close");
-          // add resources
+        },
+	"Relancer":function(){
+          $(this).dialog("close");
+          openCase()
         }
       }
     });
