@@ -73,7 +73,7 @@ function openCase(){
     }
     var src = $('#itemNumber'+childNumber+' img').attr('src');
     $('#itemNumber'+childNumber).css({background: "linear-gradient(#00bf09, #246b27)"});
-    $('#dialog-msg').html("Vous recevez "+reward+" ! ("+Math.round(money.toFixed(1)+")"+"<br><img src="+src+">");
+    $('#dialog-msg').html("Vous recevez "+reward+" ! ("+money.toFixed(1)+")"+"<br><img src="+src+">");
     $('#dialog').dialog({
       modal: true,
       title: "Nouvel Objet !",
