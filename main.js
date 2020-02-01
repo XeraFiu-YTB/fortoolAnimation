@@ -16,13 +16,13 @@ function reset(){
     if (rand < 20){//ecart de 20
     	element = '<div class="card" style="background-color: lightblue;" data-rarity="discord" id=itemNumber'+i+'>'+img.discord+'</div>';
     }
-    if (rand < 60 && rand > 20){//ecart de 40
+    if (rand < 45 && rand > 20){//ecart de 40
       element = '<div class="card" style="background-color: purple;" data-rarity="cloud" id=itemNumber'+i+'>'+img.cloud+'</div>';
     }
-    if (rand < 80 && rand > 60){//ecart de 20
+    if (rand < 70 && rand > 45){//ecart de 20
       element = '<div class="card" style="background-color: hotpink;" data-rarity="colis" id=itemNumber'+i+'>'+img.colis+'</div>';
     }
-    if (rand < 95 && rand > 80){//ecart de 15
+    if (rand < 95 && rand > 70){//ecart de 15
       element = '<div class="card" style="background-color: red;" data-rarity="AK47" id=itemNumber'+i+'>'+img.AK47+'</div>';
     }
     if (rand > 95){
