@@ -11,16 +11,16 @@ function reset(){
   for (var i = 0; i < 210; i++){
     var element = '<div class="card" style="background-color: lightblue;" data-rarity="discord" id=itemNumber'+i+'>'+img.discord+'</div>';
     var rand = random(1,10000)/100;
-    if (rand < 20){
+    if (rand < 25){
       element = '<div class="card" style="background-color: purple;" data-rarity="cloud" id=itemNumber'+i+'>'+img.cloud+'</div>';
     }
-    if (rand < 5){
+    if (rand < 10){
       element = '<div class="card" style="background-color: hotpink;" data-rarity="colis" id=itemNumber'+i+'>'+img.colis+'</div>';
     }
-    if (rand < 2){
+    if (rand < 5){
       element = '<div class="card" style="background-color: red;" data-rarity="AK47" id=itemNumber'+i+'>'+img.AK47+'</div>';
     }
-    if (rand < 0.5){
+    if (rand < 1){
       element = '<div class="card" style="background-color: gold;" data-rarity="Pass_De_Combat" id=itemNumber'+i+'>'+img.Pass_De_Combat+'</div>';
     }
 
