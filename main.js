@@ -23,7 +23,7 @@ function reset(){
     if (rand < 1){
       element = '<div class="card" style="background-color: gold;" data-rarity="Pass_De_Combat" id=itemNumber'+i+'>'+img.Pass_De_Combat+'</div>';
     }
-
+console.log(`element : ${element}`)
     $('#cardList').append(element);
   }
   $('.card').first().css('margin-left',-1000);
