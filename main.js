@@ -49,7 +49,7 @@ function openCase(){
   
   $('.card').first().animate({
     marginLeft: -rand
-  }, 3000, 'swing', function(){ //Temps de l'animation, type d'animation
+  }, 5000, 'swing', function(){ //Temps de l'animation, type d'animation
     
     switch(reward) {
     	case 'discord':
