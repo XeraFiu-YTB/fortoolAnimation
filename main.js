@@ -5,7 +5,8 @@ var img = {
   AK47: '<img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszJemkV09-5gZKKkPLLMrfFqWZU7Mxkh9bN9J7yjRrhrUFuazjzJteVJlQ6NVHTrFe3wObs15G06picwHFnvid25C3bnhSzn1gSOQz0szG-/360fx360f"/>',
   Pass_De_Combat: '<img src="images/battle_pass.png"/>'
 }
-var money = 100
+var money = 100;
+var audio = new Audio('Sound_Spin_Wheel.mp3');
 
 function reset(){
   $('.card').remove();
@@ -35,6 +36,7 @@ function reset(){
 }
 
 function openCase(){
+	audio.play();
 	console.log(`Achat d'une caisse : -3€`)
 	money -= 3
   reset();
