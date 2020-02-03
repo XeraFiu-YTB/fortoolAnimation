@@ -11,7 +11,7 @@ var audio = new Audio('Sound_Spin_Wheel.mp3');
 function reset(){
   $('.card').remove();
   for (var i = 0; i < 210; i++){
-    var elemen
+    var element
     var rand = random(1,10000)/100;
     //console.log(rand)
     if (rand < 20){//ecart de 20
